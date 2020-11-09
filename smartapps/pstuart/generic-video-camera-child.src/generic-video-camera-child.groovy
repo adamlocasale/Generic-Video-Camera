@@ -31,9 +31,8 @@ preferences {
         }
         section("Add a Camera") {
         	input("CameraStreamPathList","enum", title: "Camera Stream Path", description: "Please enter your camera's streaming path", required:false, submitOnChange: true,
-            options: [ //add your camera urls here
-            ["rtsp://Dashboard:2925300@192.168.1.20:1935/h264Preview_01_main":"Outside Front Cam #1"], //ReoLink
-             ], displayDuringSetup: true)
+            options: [ "rtsp://Dashboard:2925300@192.168.1.181/h264Preview_01_main":"Front Yard Cam #1"], //ReoLink
+             , displayDuringSetup: true)
         
             
             	input("CameraStreamPathCustom","string", title: "Camera Stream Path", description: "Please enter your camera's streaming path", defaultValue: settings?.CameraStreamPathList, required:false, displayDuringSetup: true)
